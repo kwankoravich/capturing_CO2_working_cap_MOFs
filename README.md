@@ -1,0 +1,1 @@
+This project is a part of competition of Thailand Machine Learning for Chemistry Competition (TMLCC 2021) regarding Predict the gas adsorption ability of metal-organic frameworks using machine learning
