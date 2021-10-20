@@ -42,7 +42,7 @@ Our hypothesis is from visualizing the distribution of CO2 working capacity and 
   - Apply cross-validation with 5 folds
   - Ensemble 5 models to predict CO2 working capacity
 
-## The proud accomplishment in this project
+## The successful outcome in this project
 
 1. Convert a categorical variable of the functional group into numerical data
 We found that the functional group could have been transformed from categorical variable to numerical data by using [NetworkX](https://networkx.org/documentation/stable/tutorial.html). We called a **subgraph isomorphism** [problem](https://networkx.org/documentation/stable/reference/algorithms/isomorphism.vf2.html). 
