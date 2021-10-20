@@ -11,6 +11,18 @@ According to climate change, the environmental impact would be raised in the glo
 
 The objective of our team is to predict **CO2 working capacity**, which plays a vital role in capturing CO2. What's more, our team would apply both ML and NN models to build a regression model
 
+## Feature Engineering
+
+- Fixed **accessible surface area & void volume** with zeo++🔥🔥
+- Extracted **LCD, Di** – Largest cavity diameter or the diameter of the largest included sphere 
+- Extracted **PLD, Df** – Pore limiting diameter, or the diameter of the largest free sphere 
+- Engineered some features e.g. void volume, density
+- Extracted charges of metal atom in MOF and most negative charge (MNC) from functional group
+- Categorise **topology** class as a one-hot encoding
+- Retrieve coordinated structure of MOF cell e.g. cell length a, cell length b, cell length c, 
+      cell angle alpha, cell angle beta, and cell angle gamma 
+- Classify the **Bimodal distribution of CO2 working capacity** by determining the threshold as a 25 mL/g (CO2 class label)
+
 ## Building model
 
 Our hypothesis is from visualizing the distribution of CO2 working capacity and found to be bimodal. One has negative capacity ranged to small values of positive capacity. The other has only positive values.  So we think that reflects different kinds of MOF in the dataset. The former with negative and low values of working capacity might be flexible MOF, in which it collapses after a certain pressure is applied to cause negative gas adsorption (NGA) [(Krause et al., 2016)](https://www.nature.com/articles/nature17430?proof=t%25C2%25A0). The latter is rigid MOF, where more CO2 molecules can be occupied at higher pressures. Therefore, we use two regression models to predict two different kinds of MOF. The training dataset was split into two categories using 25 mL/g as a threshold. Then they were trained to build a classification model(MLP) for use in the test set. And two regression models were built subsequently.
