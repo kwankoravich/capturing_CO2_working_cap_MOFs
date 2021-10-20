@@ -41,3 +41,13 @@ Our hypothesis is from visualizing the distribution of CO2 working capacity and 
   - Use ANN for the rest features
   - Apply cross-validation with 5 folds
   - Ensemble 5 models to predict CO2 working capacity
+
+## The proud accomplishment in this project
+
+1. Convert a categorical variable of the functional group into numerical data
+We found that the functional group could have been transformed from categorical variable to numerical data by using [NetworkX](https://networkx.org/documentation/stable/tutorial.html). We called a **subgraph isomorphism** [problem](https://networkx.org/documentation/stable/reference/algorithms/isomorphism.vf2.html). 
+We build a subgraph representing the connection of atoms in a specific functional group and screen this subgraph all over MOF to extract MNC values and the number of functional groups on each MOF.
+**MNC is the average most negative charge on each FG. This feature was chosen based on the fact that CO2 molecule has a partial positive carbon atom that is generally attracted to the negative charged site**
+
+2. The score that we achieve in the competitions
+We consumed so much time to reduce the _LMAE loss_ from **2.13685 to 1.2196**. It is a very challenging task for us to develop the model even we could not have a meeting physically. We are really proud of it. 
